@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_40"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal" 
+            android:gravity="left"
+            android:layout_weight="3"
+            >
+
+            <ToggleButton
+                android:id="@+id/iv_layer_control_togglebtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_22"
+                android:layout_marginLeft="@dimen/space_3"
+                android:layout_marginRight="@dimen/space_5"
+                android:layout_gravity="center_vertical"
+				android:background="@drawable/btn_toggle"
+        		android:checked="true"  
+        		android:text=""  
+        		android:textOff=""  
+        		android:textOn="">
+            </ToggleButton>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal"
+            android:gravity="center" 
+            android:layout_weight="6"
+            >
+
+            <TextView
+                android:id="@+id/tv_layer_control_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/space_4"
+                android:layout_marginRight="@dimen/space_8"
+                android:paddingLeft="@dimen/space_8"
+                android:singleLine="true"
+                android:text="流浪"
+                android:textColor="@color/text_subtitle"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_40"
+            android:orientation="horizontal" 
+            android:gravity="right"
+            android:layout_weight="2"
+            >
+
+            <ImageView
+                android:id="@+id/iv_layer_control_more"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/space_6"
+                android:layout_marginRight="@dimen/space_4"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_more">"
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

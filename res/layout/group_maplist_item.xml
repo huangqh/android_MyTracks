@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_group_maplist_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical" >
+
+    <ImageView
+            android:id="@+id/group_mapthumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_map_snapshot_border"
+            android:padding="0.1dp"
+            android:src="@drawable/icon_maplist_snapshot"/>
+
+    <TextView
+            android:id="@+id/group_mapname"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_group_mapname_border"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp"
+            android:text="地图标题"/>
+</LinearLayout>

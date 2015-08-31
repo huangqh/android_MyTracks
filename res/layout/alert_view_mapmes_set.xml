@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/space_8">
+    <TextView
+            android:id="@+id/tv_alert_mapset_title"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存设置"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_19"
+            />
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" />
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_map_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="标题:"
+                android:textSize="@dimen/text_size_17" />
+
+            <EditText
+            android:id="@+id/et_map_title_name"
+            style="@style/edt_login_item"
+            android:background="@drawable/shape_login_edit"
+            android:hint="地图的标题(必填)"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_map_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="标签:"
+                android:textSize="@dimen/text_size_17" />
+
+            <EditText
+            android:id="@+id/et_map_tag"
+            style="@style/edt_login_item"
+            android:background="@drawable/shape_login_edit"
+            android:hint="多个标签用逗号分隔，最多不超过6个(必填)"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/space_8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_map_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="描述:"
+                android:textSize="@dimen/text_size_17" />
+
+            <EditText
+            android:id="@+id/et_map_describe"
+            style="@style/edt_login_item"
+            android:background="@drawable/shape_login_edit"
+            android:hint="地图的描述"
+            android:gravity="top"
+            android:maxLines="5"
+            android:singleLine="false"
+            />           
+        </LinearLayout>
+        <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" /> -->
+</LinearLayout>

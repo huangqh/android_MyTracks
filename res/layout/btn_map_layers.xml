@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_layers_view"
+        android:layout_gravity="right"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/bg_maplayers_back"
+        android:orientation="vertical" >
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:background="#34485e"> 
+
+   		 <TextView
+            android:id="@+id/tv_layers_title"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加Web图层"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19"
+            />
+     	<ImageView
+		    android:id="@+id/iv_layers_close"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+			android:layout_gravity="right|center_vertical" 
+		    android:src="@drawable/btn_search_clean"
+		    />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" />
+    <com.supermap.mytracks.customUI.GridViewWithHF
+        android:id="@+id/gv_layers_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" 
+        />
+  
+
+    </LinearLayout>

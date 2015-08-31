@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/shap_half_roundrect"
+              >
+    
+	<!-- <ListView 
+	    android:id="@+id/lv_map_layers" 
+	    android:layout_width="230dp" 
+	    android:layout_height="match_parent" 
+	    android:layout_marginTop="@dimen/space_10"
+	    android:layout_marginBottom="@dimen/space_10"
+	    />  -->
+	    <ListView
+        android:id="@+id/lv_map_layeroptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263a55"
+        android:cacheColorHint="@color/transparent"
+        android:paddingLeft="@dimen/space_3"
+        android:paddingRight="@dimen/space_3"
+        android:listSelector="@drawable/item_selector"
+        android:divider="#142841"
+        android:dividerHeight="@dimen/space_1"
+        android:scrollbars="none"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/space_1" />
+</LinearLayout>

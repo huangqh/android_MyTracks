@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app的主题颜色-->
+    <color name="theme_blue">#12A3D8</color>
+    <color name="theme_blue_ationbar">#ff12A3D8</color>
+    <color name="theme_blue_dark">#142840</color>
+    <color name="text">#585656</color>
+	<!--字体颜色_标题栏-->
+    <color name="text_title">#ffffff</color>
+     <!--字体颜色_大标题，或者按钮的颜色等_黑色-->
+    <color name="text_title_black">#343434</color>
+     <!--字体颜色_次标题_黑色-->
+    <color name="text_subtitle">#4d4d4d</color>
+    <!--一些灰色的字体-->
+    <color name="text_gray">#83888C</color>
+    <!--字体颜色_不可用_灰色-->
+    <color name="text_hint">#d7d7d7</color>
+    <!--登录界面颜色-->
+    <color name="login_edit">#4ad486</color>
+    <color name="login_text_hint">#99FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3084DC</color>
+    <color name="gray">#E9E9E9</color>
+    <color name="LightBlue">#166ea0</color>
+    <color name="transparent">#00000000</color>
+    <!--按钮颜色_蓝色-->
+    <color name="btn_blue">#1c91ea</color>
+    <color name="btn_blue_plus">#0078d2</color>
+    <!--分割线_灰色-->
+    <color name="divide_gray">#e5e5e5</color>
+    <color name="bg_title">#12A3D8</color>
+    <!--背景_半透明-->
+    <color name="bg_half_transparent">#40000000</color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/space_8">
+    <TextView
+            android:id="@+id/tv_alert_title"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置地图名称"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19"
+            android:background="#34485e"
+            />
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" />
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="地图名称:"
+                android:textSize="@dimen/text_size_17" />
+
+            <EditText
+            android:id="@+id/et_title_name"
+            style="@style/edt_login_item"
+            android:background="@drawable/shape_login_edit"
+            android:text="China"
+            />
+        </LinearLayout>
+        <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" /> -->
+</LinearLayout>

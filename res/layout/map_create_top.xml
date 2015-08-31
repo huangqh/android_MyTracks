@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.8"
+    android:orientation="horizontal"
+     >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:background="@color/bg_title"
+            android:orientation="horizontal" >
+
+        <ImageView
+                android:gravity="center"
+                android:id="@+id/iv_map_back"
+                android:background="@drawable/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                />
+       
+        <ImageView
+                android:gravity="center"
+                android:id="@+id/iv_map_more"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                />
+        
+        <ImageView
+                android:gravity="center"
+                android:id="@+id/iv_map_save"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/iv_map_more"
+                />
+         <ImageView
+             android:id="@+id/iv_map_publish"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toLeftOf="@id/iv_map_save"
+             android:clickable="true"
+             android:gravity="center"
+             android:src="@drawable/btn_publish" />
+         <ImageView
+             android:id="@+id/iv_map_layercontrol"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toLeftOf="@id/iv_map_publish"
+             android:clickable="true"
+             android:gravity="center"
+             android:src="@drawable/btn_map_layercontrol" />
+ 		<TextView
+                android:id="@+id/tv_map_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="未命名地图"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/text_size_15"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/iv_map_back"
+                android:layout_toLeftOf="@id/iv_map_layercontrol"
+                 />
+    </RelativeLayout>
+
+</LinearLayout>

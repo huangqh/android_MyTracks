@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_marker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical"
+        android:background="#d5d5d5" >
+
+    <ImageView
+        android:id="@+id/iv_marker_purple"
+        style="@style/btn_mapview_mapcontrol"
+        android:clickable="true"
+        android:background="@drawable/btn_map_marker_purple" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" />
+    <ImageView
+        android:id="@+id/iv_marker_blue"
+        style="@style/btn_mapview_mapcontrol"
+        android:clickable="true"
+        android:background="@drawable/btn_map_marker_blue" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@color/divide_gray" />
+    <ImageView
+        android:id="@+id/iv_marker_red"
+        style="@style/btn_mapview_mapcontrol"
+        android:clickable="true"
+        android:background="@drawable/btn_map_marker" />
+  
+    </LinearLayout>

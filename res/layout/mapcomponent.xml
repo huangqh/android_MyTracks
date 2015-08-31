@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.supermap.mapping.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.supermap.mapping.MapView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="7dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ibtn_mapview_zoomin"
+            style="@style/btn_mapview_mapcontrol"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/mapview_zoomin"
+            android:background="@drawable/btn_mapview_zoomin_selector"
+            android:scaleType="fitXY"
+             />
+
+        <ImageButton
+            android:id="@+id/ibtn_mapview_zoomout"
+            style="@style/btn_mapview_mapcontrol"
+            android:contentDescription="@string/mapview_zoomout"
+            android:background="@drawable/btn_mapview_zoomout_selector" />
+
+        <ImageButton
+            android:id="@+id/ibtn_mapview_fullscreen"
+            style="@style/btn_mapview_mapcontrol"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/mapview_fullscreen"
+            android:background="@drawable/btn_mapview_fullscreen_selector" />
+    </LinearLayout>
+
+</FrameLayout>
